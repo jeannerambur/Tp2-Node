@@ -1,5 +1,7 @@
-const User = require("../models/user")(sequelize, DataTypes);
+const { sequelize } = require("../models");
+var DataTypes = require('sequelize/lib/data-types');
 
+const User = require("../models/user")(sequelize, DataTypes);
 exports.createUser = (req, res) => {
     const createUser = User.create(req.body)
         .then((response) => {

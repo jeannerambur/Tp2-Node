@@ -9,7 +9,9 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "data-types": "^1.0.10",
         "express": "^4.17.2",
+        "mysql": "^2.18.1",
         "sequelize": "^6.12.5",
         "sqlite3": "^5.0.2"
     }
